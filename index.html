@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#banner" class="logo">FFCD<span>.</span></a>
+        <ul class="navegador">
+            <li><a href="#banner">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contactos">Contactos</a></li>
+            <li><a href="#contactos">Login</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="contenedor">
+            <h2>Frontend For Client Document</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maxime, dicta eaque nihil ex doloremque repudiandae reiciendis dolore temporibus recusandae fuga praesentium laboriosam iusto autem? Veniam, sint molestias. Eius, vitae.</p>
+            <a href="#nosotros" class="btn">nosotros</a>
+        </div> 
+
+    </section>
+
+    <section class="nosotros" id="nosotros">
+        <div class="row">
+            <div class="col50">
+                <h2 class="Titulo-textos"><span>N</span>osotros</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi accusantium ipsa facilis fugit vero assumenda minus! Sit eos aperiam, commodi alias explicabo corrupti, adipisci quasi voluptatum non ducimus perferendis quod?
+                Quibusdam  <br><br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat quidem iusto doloribus vero dicta ullam aliquid natus, porro iure atque excepturi voluptas? Odio reprehenderit excepturi veritatis iusto sint quia ratione!
+                Alias, odio aperiam exercitationem optio explicabo obcaecati voluptas ea porro vel amet minus laudantium. Repudiandae natus consequatur eligendi nostrum asperiores. </p>
+            </div>
+
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="nosotros.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="servicios" id="servicios">
+        <div class="titulo">
+            <h2 class="Titulo-textos"><span>N</span>uestros Servicios</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima omnis eum vitae </p>
+        </div>
+
+       <div class="contenido">
+           <div class="box">
+               <div class="imgBx">
+                   <img src="servicios-4.jpg" alt="">
+               </div>
+
+               <div class="texto">
+                   <h3>Cargue de Documentos</h3>
+               </div>
+           </div>
+
+
+           <div class="box">
+            <div class="imgBx">
+                <img src="servicios-3.jpg" alt="">
+            </div>
+
+            <div class="texto">
+                <h3>Seguridad</h3>
+            </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="servicios 2.jpg" alt="">
+                </div>
+
+                <div class="texto">
+                    <h3>Interfaz Intuitiva</h3>
+                </div>
+            </div>
+       </div>
+    </section>
+
+    <section class="contactos" id="contactos">
+
+        <div class="titulo">
+            <h2 class="Titulo-textos"><span>C</span>ontactos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sapiente error, ratione at similique pariatur omnis perferendis sit impedit facilis minima aliquid, et accusamus fugiat neque sequi repudiandae quam quisquam.</p>
+        </div>
+
+        
+        
+            <div class="contactar">
+                <h3>Ingresa tu información</h3>
+
+                <div class="inputBox">
+                    <input type="text" placeholder="Nombre">
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" placeholder="Telefono">
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" placeholder="Email">
+                </div>
+
+                <div class="inputBox">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </div>
+        </div>
+        
+            
+
+            
+        
+
+    </div>
+            
+    
+    </section>
+
+
+    <div class="derechos">
+        <p>Copyright 2022 <span>Las Fieras</span> Todos los derechos reservados</p>
+    </div>
+
+    
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+
+
+        function navFuncion(){
+            const funcionNav = document.querySelector('.funcionNav');
+            const navegador= document.querySelector('.navegador')
+            funcionNav.classList.toggle('active');
+            navegador.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
