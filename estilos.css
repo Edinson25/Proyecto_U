@@ -338,4 +338,56 @@ section{
     header.sticky .funcionNav{
         filter: invert(1);
     }
+
+    section{
+        padding: 20px;
+    }
+
+    .banner .contenedor h2{
+        color: #fff;
+        font-size: 4em;
+    }
+
+    .banner .contenedor p{
+        font-weight: 400;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .row .col50{
+        position: relative;
+        width: 100%;
+    }
+
+    .row .col50 .imgBx{
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .servicios .contenido .box{
+        margin: 10px;
+    }
+
+    .servicios .contenido .box .imgBx{
+        height: 268px;
+    }
+
+    .contactos{
+        background: #fff;
+        justify-content: center;
+    }
+
+    .contactar{
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:480px){
+    .banner .contenedor h2{
+        font-size: 2.5em;
+    }
 }
