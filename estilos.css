@@ -391,3 +391,24 @@ section{
         font-size: 2.5em;
     }
 }
+/* 
+@media (max-width:361px){
+    .banner{
+        height: 103vh;
+    }
+}
+
+@media (max-width:281px){
+    .banner{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .banner .contenedor h2{
+        font-size: 1.3em;
+    }
+
+    .banner .contenedor p{
+        font-size: 0.9em;
+    }
+} */
