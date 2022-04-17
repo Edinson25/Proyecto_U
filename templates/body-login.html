@@ -1,0 +1,52 @@
+<body>
+    <header style="background: #fff;display: flex;">
+        <a href="#banner" style="color: black;" class="logo">FFCD<span>.</span></a>
+        <!-- <div class="funcionNav" onclick="navFuncion();"></div> -->
+        <ul class="navegador">
+            <li><a href="../views/index.php"  style="color: black;">Inicio</a></li>
+            <li><a href="#nosotros"   style="color: black;">Nosotros</a></li>
+            <li><a href="#servicios"   style="color: black;" >Servicios</a></li>
+            <li><a href="#contactos"   style="color: black;" >Contactos</a></li>
+            <!-- <li><a href="#contactos"  onclick="navFuncion();">Login</a></li> -->
+            <li><a href="../views/login.php" style="color: black;">Login</a></li>
+        </ul>
+    </header>
+    <section class="contactos" id="contactos">
+
+ 
+            <div class="contactar">
+                
+              
+                    <h2 class="Titulo-textos"><span>I</span>niciar <span>S</span>esión</h2>
+              <br>
+              <span>Aun no se ha registrado? <a href="../views/registro.php" style="text-decoration: none;">Registrese aquí</a></span>
+              <br>
+              <br>
+              <br>
+              <form action="../controller/login.php" method="POST"> 
+                <div class="inputBox">
+                    <input style="text-align: center;" type="text" name="Email" placeholder="Correo Electrónico" required>
+                </div>
+               <div class="forgot-p">
+                    <a class="forgot-password"
+                        href="../views/olvidar-contra.php">¿Olvidaste la contraseña?</a>
+                        <br>
+                        <br>
+                    </div>
+               
+                <div class="inputBox">
+                    <input style="text-align: center;" name="contraseña" type="password" placeholder="Contraseña" required>
+                </div>
+
+                <br>
+                [BODY-MESSAGE]
+                <br>
+
+                <div class="inputBox1">
+                    <input type="submit" value="Iniciar Sesión">
+                </div>
+
+            </div>
+        </div>
+    </form>
+</body>

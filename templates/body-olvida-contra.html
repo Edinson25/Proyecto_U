@@ -1,0 +1,35 @@
+<body>
+    <header style="background: #fff;display: flex;">
+        <a href="#banner" style="color: black;" class="logo">FFCD<span>.</span></a>
+        <!-- <div class="funcionNav" onclick="navFuncion();"></div> -->
+        <ul class="navegador">
+            <li><a href="../views/index.php"  style="color: black;">Inicio</a></li>
+            <li><a href="#nosotros"   style="color: black;">Nosotros</a></li>
+            <li><a href="#servicios"   style="color: black;" >Servicios</a></li>
+            <li><a href="#contactos"   style="color: black;" >Contactos</a></li>
+            <!-- <li><a href="#contactos"  onclick="navFuncion();">Login</a></li> -->
+            <li><a href="../views/login.php" style="color: black;">Login</a></li>
+        </ul>
+    </header>
+    <section class="contactos" id="contactos">
+
+ 
+            <div class="contactar">
+                
+              
+                    <h2 class="Titulo-textos"><span>R</span>establecer <span>C</span>ontraseña</h2>
+              
+              
+              
+              <span>¿Ha olvidado su contraseña? <br> Por favor digite el correo asociado a su cuenta para poder continuar con el proceso.</span>
+              <br>
+              <br>
+              <form action="../controller/reset-password.php" method="POST">
+              <div class="inputBox">
+              <input style="text-align: center;" type="text" name="email22" placeholder="Correo Electrónico" required>
+             </div>
+              [BODY-MESSAGE]
+              <button type="submit">Restablecer Contraseña</button>
+             </form>
+             
+</body>

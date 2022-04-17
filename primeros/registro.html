@@ -1,0 +1,96 @@
+<style>
+
+    .contactar{
+   
+       margin: auto;
+       border: solid 1px;
+       border-color: deepskyblue;
+       border-radius: 14px;
+       box-shadow: 1px 1px 8px -2px;
+       text-align: center;
+    }
+    .contactar .inputBox1 input[type="submit"] {
+       font-size: 1em;
+       color: #fff;
+       background: #008cff;
+       display: inline-block;
+       text-transform: uppercase;
+       text-decoration: none;
+       letter-spacing: 2px;
+       transition: 0.5s;
+       max-width: 217px;
+       font-weight: 500;
+       border: none;
+       cursor: pointer;
+   
+    }
+    
+   </style>
+   
+   
+   <!DOCTYPE html>
+   <html lang="es">
+   <head>
+       <meta charset="UTF-8">
+       <link rel="stylesheet" href="estilos.css">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=, initial-scale=1.0">
+       <title>Login</title>
+   </head>
+   <body>
+       <header style="background: #fff;">
+           <a href="#banner" style="color: black;" class="logo">FFCD<span>.</span></a>
+           <!-- <div class="funcionNav" onclick="navFuncion();"></div> -->
+           <ul class="navegador">
+               <li><a href="index.html"  style="color: black;">Inicio</a></li>
+               <li><a href="#nosotros"   style="color: black;">Nosotros</a></li>
+               <li><a href="#servicios"   style="color: black;" >Servicios</a></li>
+               <li><a href="#contactos"   style="color: black;" >Contactos</a></li>
+               <!-- <li><a href="#contactos"  onclick="navFuncion();">Login</a></li> -->
+               <li><a href="login.html" style="color: black;">Login</a></li>
+           </ul>
+       </header>
+       <section class="contactos" id="contactos">
+   
+    
+               <div class="contactar">
+                   
+                 
+                       <h2 class="Titulo-textos"><span>R</span>egistro </h2>
+         
+                 <br>
+             <form action="Controlador/registro.php" method="POST"> 
+                   <div class="inputBox">
+                       <input style="text-align: center;" type="text" name="Name" placeholder="Nombre Completo" required>
+                   </div>
+             
+                <div class="inputBox">
+                    <input style="text-align: center;" type="text" name="Email" placeholder="Correo Electrónico" required>
+                </div>
+                <div class="inputBox">
+                    <input style="text-align: center;" type="text" name="Usuario" placeholder="Uusuario" required>
+                </div>
+   
+                   <div class="inputBox">
+                       <input style="text-align: center;" name="Contraseña" type="password" placeholder="Contraseña" required>
+                   </div>
+                   <div class="inputBox">
+                    <input style="text-align: center;" name="ConfirmaContraseña" type="password" placeholder="Confirmar Contraseña" required>
+                </div>
+   
+                   <br>
+                   <br>
+   
+                   <div class="inputBox1">
+                       <input type="submit" value="Registrarse">
+                       <br>
+                       <br>
+
+                       <span> Ya tienes cuenta? <a href="login.html">Inicia Sesión aquí</a></span>
+                   </div>
+   
+               </div>
+           </div>
+       </form>
+   </body>
+   </html>
