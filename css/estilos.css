@@ -499,6 +499,10 @@ footer  .redes{
         justify-content: center;
         
     }
+
+    .contactar{
+        margin-top: 100px;
+    }
 }
 
 @media(max-width:480px){
