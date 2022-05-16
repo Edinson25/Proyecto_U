@@ -2,14 +2,12 @@
 
 require "bd.php";
 
-
 $Id = $_POST['id'];
 $Nombre = $_POST['nombre'];
 $Fecha = $_POST['fecha'];
-$Tipo = $_POST['tipo'];
 $Encargado = $_POST['encargado'];
 
-$sql = "INSERT INTO documentos VALUES('$Id','$Nombre',$Fecha,'$Tipo','$Encargado')";
+$sql = "UPDATE documentos SET nombre='$Nombre', fecha=$Fecha, encargado='$Encargado' WHERE id='$Id' ";
 $query = mysqli_query($conexion, $sql);
 
 if ($query) {
