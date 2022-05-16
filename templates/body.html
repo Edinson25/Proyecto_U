@@ -11,18 +11,18 @@
             <li><a href="../views/login.php">Login</a></li>
         </ul>
     </header>
-    <section class="banner" id="banner">
+    <section class="banner" id="banner" data-aos="fade-down"  data-aos-duration="1000">
         <div class="contenedor">
             <h2>Frontend For Client Document</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maxime, dicta eaque nihil ex doloremque repudiandae reiciendis dolore temporibus recusandae fuga praesentium laboriosam iusto autem? Veniam, sint molestias. Eius, vitae.</p>
+            <p>La pagina donde los documentos de tu empresa estaran seguros, gracias a nuestro sistema de seguridad ya que se alojaran en nuestro base local y de igual forma se guardaran en la nube de AWS, por lo tanto tendremos un backup de toda la información que consideres importante ¡Animate!</p>
             <a href="#nosotros" class="btn">nosotros</a>
         </div> 
 
     </section>
 
-    <section class="nosotros" id="nosotros">
+    <section class="nosotros" id="nosotros" data-aos="fade-down"  data-aos-duration="1000">
         <div class="row">
-            <div class="col50">
+            <div class="col50" >
                 <h2 class="Titulo-textos"><span>N</span>osotros</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi accusantium ipsa facilis fugit vero assumenda minus! Sit eos aperiam, commodi alias explicabo corrupti, adipisci quasi voluptatum non ducimus perferendis quod?
                 Quibusdam  <br><br>
@@ -39,14 +39,14 @@
     </section>
 
 
-    <section class="servicios" id="servicios">
+    <section class="servicios" id="servicios" data-aos="fade-down"  data-aos-duration="1000">
         <div class="titulo">
             <h2 class="Titulo-textos"><span>N</span>uestros Servicios</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima omnis eum vitae </p>
+            <p>Encontraras los servicios que ofrecemos los cuales son geniales!</p>
         </div>
 
        <div class="contenido">
-           <div class="box">
+           <div class="box"  data-aos="zoom-in" data-aos-duration="1000">
                <div class="imgBx">
                    <img src="../img/servicios-4.jpg" alt="">
                </div>
@@ -57,7 +57,7 @@
            </div>
 
 
-           <div class="box">
+           <div class="box"  data-aos="zoom-in" data-aos-duration="1000">
             <div class="imgBx">
                 <img src="../img/servicios-3.jpg" alt="">
             </div>
@@ -67,7 +67,7 @@
             </div>
             </div>
 
-            <div class="box">
+            <div class="box"  data-aos="zoom-in" data-aos-duration="1000">
                 <div class="imgBx">
                     <img src="../img/servicios 2.jpg" alt="">
                 </div>
@@ -79,11 +79,11 @@
        </div>
     </section>
 
-    <section class="contactos" id="contactos">
+    <section class="contactos" id="contactos" data-aos="fade-down"  data-aos-duration="1000">
 
         <div class="titulo">
             <h2 class="Titulo-textos"><span>C</span>ontactos</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sapiente error, ratione at similique pariatur omnis perferendis sit impedit facilis minima aliquid, et accusamus fugiat neque sequi repudiandae quam quisquam.</p>
+            <p>Hey! si tienes alguna duda o quieres obtener mas información sobre nosotros y nuestros servicios puedes introducir tus datos y te contactaremos</p>
         </div>
 
         
@@ -114,13 +114,27 @@
             
     </section>
 
-    <div class="derechos">
-        <p>Copyright 2022 <span>Las Fieras</span> Todos los derechos reservados</p>
-    </div>
+    <footer data-aos="fade-up"  data-aos-duration="1000">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+  
+        <ul class="redes">
+          <li><a href=""><img src="../img/facebook.png" alt=""></a></li>
+          <li><a href=""><img src="../img/instagram.png" alt=""></a></li>
+          <li><a href=""><img src="../img/twitter.png" alt=""></a></li>
+        </ul>
+        <div class="derechos">
+          <p>Copyright 2022 <span>Edinson Morales</span> Todos los derechos reservados</p>
+        </div>
+      </footer>
 
     
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript">
         window.addEventListener('scroll', function(){
             const header = document.querySelector('header');
@@ -134,5 +148,7 @@
             funcionNav.classList.toggle('active');
             navegador.classList.toggle('active')
         }
+
+        AOS.init();
     </script>
 </body>
